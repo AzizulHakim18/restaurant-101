@@ -33,15 +33,81 @@ a {
 
 }
 
+h1 {
+    color: #101A24;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 72px;
+    /* 102.857% */
+}
+
+p {
+    color: #5C6574;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    /* 181.25% */
+}
+
+.container-icon {
+    width: 29px;
+    height: 29px;
+}
+
 .btn-primary {
     color: #FFF;
     background-color: #EA6D27;
     border: 0;
     padding: 15px 20px;
     border-radius: 20% 5%;
-
     font-size: 20px;
     font-weight: 500;
     line-height: 29px;
     /* 145% */
+}
+
+.btn-secondary {
+    color: #FFF;
+    background-color: #101A24;
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 20% 5%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.icon-container i {
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #101A24;
+    border-radius: 50%;
+    margin: 4px;
+    padding: 5px;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-img-section {
+    margin: 40px 0px 40px 10%;
+    position: relative;
+}
+
+.banner-main-img {
+    border: 1px solid EA6D27;
+    border-radius: 20% 5%;
+}
+
+.banner-secondary-img {
+    width: 364px;
+    height: 364px;
+    position: absolute;
+    bottom: 5%;
+    left: -40%;
+
+
 }
