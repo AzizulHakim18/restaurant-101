@@ -46,6 +46,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 29px;
+    margin: 10px 0px;
     /* 181.25% */
 }
 
@@ -77,6 +78,10 @@ p {
     line-height: 29px;
 }
 
+.icon-container {
+    margin: 40px 0px;
+}
+
 .icon-container i {
     font-size: 30px;
     text-align: center;
@@ -92,13 +97,25 @@ p {
     align-items: center;
 }
 
+.banner-content {
+    position: relative;
+}
+
+.banner-content-img {
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    z-index: -1;
+    opacity: .4;
+}
+
 .banner-img-section {
     margin: 40px 0px 40px 10%;
     position: relative;
 }
 
 .banner-main-img {
-    border: 1px solid EA6D27;
+    border: 1px solid #EA6D27;
     border-radius: 20% 5%;
 }
 
@@ -108,6 +125,95 @@ p {
     position: absolute;
     bottom: 5%;
     left: -40%;
+}
+
+.banner-vector-img {
+    position: absolute;
+    top: -10%;
+    right: -25%;
+    z-index: -1;
+}
 
 
+
+
+
+
+
+
+
+
+/* media querie for mobile*/
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-content-img {
+        top: 5%;
+        left: 10%;
+    }
+
+    .banner-main-img {
+        width: 99%;
+    }
+
+    .banner-secondary-img {
+        width: 150px;
+        height: 150px;
+        bottom: 5%;
+        left: -10%;
+    }
+
+    .banner-vector-img {
+        top: -30%;
+        right: -5%;
+    }
+}
+
+/* media querie for tablet */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .container {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-content-img {
+        top: 5%;
+        left: 10%;
+    }
+
+    .banner-main-img {
+        width: 99%;
+    }
+
+    .banner-secondary-img {
+        width: 150px;
+        height: 150px;
+        bottom: 5%;
+        left: -10%;
+    }
+
+    .banner-vector-img {
+        top: -30%;
+        right: -5%;
+    }
 }
