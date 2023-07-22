@@ -12,6 +12,10 @@
     margin: 40px auto;
 }
 
+section {
+    margin: 20px 0px;
+}
+
 .container-flex {
     display: flex;
     justify-content: space-evenly;
@@ -181,6 +185,46 @@ p {
     right: 50px;
 }
 
+/* welcome section */
+.welcome-dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.welcome-img {
+    position: relative;
+}
+
+.leaf-a {
+    position: absolute;
+    top: 40%;
+    left: -5%;
+}
+
+.leaf-b {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: rotate(90deg);
+}
+
+.leaf-c {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
 
 
 /* media querie for mobile*/
@@ -223,6 +267,27 @@ p {
     .dish-cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .welcome-dish {
+        flex-direction: column-reverse;
+    }
+
+    .welcome-img-banner {
+        width: 90%;
+    }
+
+    .leaf-a {
+        width: 100px;
+    }
+
+    .leaf-b {
+        width: 100px;
+    }
+
+    .leaf-c {
+        width: 100px;
+    }
+
 }
 
 /* media querie for tablet */
@@ -263,5 +328,21 @@ p {
 
     .dish-cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome-img-banner {
+        width: 100%;
+    }
+
+    .leaf-a {
+        width: 100px;
+    }
+
+    .leaf-b {
+        width: 100px;
+    }
+
+    .leaf-c {
+        width: 100px;
     }
 }
