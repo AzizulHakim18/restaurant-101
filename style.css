@@ -217,6 +217,24 @@ p {
     transform: rotate(45deg);
 }
 
+.experts-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.bullet-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.bullet-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 
 
